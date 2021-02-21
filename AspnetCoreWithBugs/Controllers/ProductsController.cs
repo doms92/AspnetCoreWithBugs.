@@ -21,7 +21,7 @@ namespace AspnetCoreWithBugs.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(await ProductDb.Product.GetAllProducts(_context));
+            return View(await ProductDb.GetAllProducts(_context));
         }
 
         [HttpGet]
